@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Units Converter</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="abc">Units Converter</h1>
+  </header>
+
+  <main>
+    <div class="conversion-type-select">
+      <label for="conversion-type">Select Conversion Type:</label>
+      <select id="conversion-type">
+        <option value="length">Length</option>
+        <option value="time">Time</option>
+        <option value="temperature">Temperature</option>
+        <option value="weight">Weight</option>
+      </select>
+    </div>
+
+    <div id="length-converter" class="converter hidden">
+      <h2>Length Converter</h2>
+      <div class="input-group">
+        <input type="number" id="length-input" placeholder="Enter length">
+        <select id="length-select-from">
+          <option value="m">Meter (m)</option>
+          <option value="km">Kilometer (km)</option>
+          <option value="cm">Centimeter (cm)</option>
+          <option value="mm">Millimeter (mm)</option>
+          <option value="mi">Mile (mi)</option>
+          <option value="yd">Yard (yd)</option>
+          <option value="ft">Foot (ft)</option>
+          <option value="in">Inch (in)</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <input type="number" id="length-output" disabled>
+        <select id="length-select-to">
+          <option value="m">Meter (m)</option>
+          <option value="km">Kilometer (km)</option>
+          <option value="cm">Centimeter (cm)</option>
+          <option value="mm">Millimeter (mm)</option>
+          <option value="mi">Mile (mi)</option>
+          <option value="yd">Yard (yd)</option>
+          <option value="ft">Foot (ft)</option>
+          <option value="in">Inch (in)</option>
+        </select>
+      </div>
+      <button id="length-convert-btn">Convert</button>
+    </div>
+
+    <div id="time-converter" class="converter hidden">
+      <h2>Time Converter</h2>
+      <div class="input-group">
+        <input type="number" id="time-input" placeholder="Enter time">
+        <select id="time-select-from">
+          <option value="s">Seconds (s)</option>
+          <option value="min">Minutes (min)</option>
+          <option value="hr">Hours (hr)</option>
+          <option value="day">Days (day)</option>
+          <option value="week">Weeks (week)</option>
+          <option value="month">Months (month)</option>
+          <option value="year">Years (year)</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <input type="number" id="time-output" disabled>
+        <select id="time-select-to">
+          <option value="s">Seconds (s)</option>
+          <option value="min">Minutes (min)</option>
+          <option value="hr">Hours (hr)</option>
+          <option value="day">Days (day)</option>
+          <option value="week">Weeks (week)</option>
+          <option value="month">Months (month)</option>
+          <option value="year">Years (year)</option>
+        </select>
+      </div>
+      <button id="time-convert-btn">Convert</button>
+    </div>
+
+    <div id="temperature-converter" class="converter hidden">
+      <h2>Temperature Converter</h2>
+      <div class="input-group">
+        <input type="number" id="temperature-input" placeholder="Enter temperature">
+        <select id="temperature-select-from">
+          <option value="c">Celsius (°C)</option>
+          <option value="f">Fahrenheit (°F)</option>
+          <option value="k">Kelvin (K)</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <input type="number" id="temperature-output" disabled>
+        <select id="temperature-select-to">
+          <option value="c">Celsius (°C)</option>
+          <option value="f">Fahrenheit (°F)</option>
+          <option value="k">Kelvin (K)</option>
+        </select>
+      </div>
+      <button id="temperature-convert-btn">Convert</button>
+    </div>
+
+    <div id="weight-converter" class="converter hidden">
+      <h2>Weight Converter</h2>
+      <div class="input-group">
+        <input type="number" id="weight-input" placeholder="Enter weight">
+        <select id="weight-select-from">
+          <option value="g">Gram (g)</option>
+          <option value="kg">Kilogram (kg)</option>
+          <option value="lb">Pound (lb)</option>
+          <option value="oz">Ounce (oz)</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <input type="number" id="weight-output" disabled>
+        <select id="weight-select-to">
+          <option value="g">Gram (g)</option>
+          <option value="kg">Kilogram (kg)</option>
+          <option value="lb">Pound (lb)</option>
+          <option value="oz">Ounce (oz)</option>
+        </select>
+      </div>
+      <button id="weight-convert-btn">Convert</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
